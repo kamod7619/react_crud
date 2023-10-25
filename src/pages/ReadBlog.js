@@ -53,9 +53,13 @@ export default function ReadBlog() {
         marginLeft:"10px",
         marginRight:"10px"
     }
+    let createBlog=()=>{
+        navigate('/create')
+    }
     return (
         <div>
             <h2 className="main-header pt-4">React Crud Operations</h2>
+            <a href='javascript:void(0)' className='btn btn-primary text-right' onClick={()=>{ createBlog()}}>Create Blog</a>
             <table className='table'>
                 <thead>
                     <tr>

@@ -3,11 +3,15 @@ import Slider from '../components/Slider'
 import Card from '../components/Card'
 import About from './About'
 import Contact from './Contact'
+import { Hello } from '../helpers/Common'
 
 
 
 
-let Home = ()=>{
+let Home = ()=>{    
+
+    console.log("Helper",Hello())
+
     return (
         <div>
             <Slider/>
