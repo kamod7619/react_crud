@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  /* background-color: #212121; */
+  color: black;
+  flex-direction: column;
+  padding-top: 3%;
+}
+
+.carousel-item{
+  height: 700px;
+}
+
+.w3-card-4 img{
+  height: 282px;
+}
+
+.main-header{
+  font-family: 'Montserrat', sans-serif;
+}
+.create-form label{
+  color: black !important;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px !important;
+}
+.navbar-expand-sm{
+  background-color: #fd9800!important;
+    height: 70px;
+}
+
+.footer{
+  background-color: #fd9800!important;
+}
+
+@media screen and (max-width: 767px){
+  .carousel-item{
+    height: 240px;
+  }
+  .navbar-expand-sm{
+    background-color: #fd9800!important;
+    height: auto;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
