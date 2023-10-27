@@ -1,5 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
+import Operation from '../pages/Operation';
+import CurrentBalance from './CurrentBalance';
 
 export default function Header() {
 
@@ -22,26 +24,30 @@ export default function Header() {
             <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="mynavbar">
-            <ul className="navbar-nav me-auto">
-                <li className="nav-item">
-                <a className="nav-link" href="javascript:void(0)" onClick={() => redirectRouting()}>Home</a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link" href="javascript:void(0)" onClick={() => redirectRouting('read')}>Crud Operation</a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link" href="javascript:void(0)" onClick={() => redirectRouting('about')}>About US</a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link" href="javascript:void(0)" onClick={() => redirectRouting('blog')}>Blog</a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link" href="javascript:void(0)" onClick={() => redirectRouting('product-list')}>Shop Now</a>
-                </li>
-                <li className="nav-item">
-                <a className="nav-link" href="javascript:void(0)" onClick={() => redirectRouting('contact')}>Contact US</a>
-                </li>
-            </ul>            
+                <ul className="navbar-nav me-auto">
+                    <li className="nav-item">
+                    <a className="nav-link" href="javascript:void(0)" onClick={() => redirectRouting()}>Home</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link" href="javascript:void(0)" onClick={() => redirectRouting('read')}>Crud Operation</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link" href="javascript:void(0)" onClick={() => redirectRouting('about')}>About US</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link" href="javascript:void(0)" onClick={() => redirectRouting('blog')}>Blog</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link" href="javascript:void(0)" onClick={() => redirectRouting('product-list')}>Shop Now</a>
+                    </li>
+                    <li className="nav-item">
+                    <a className="nav-link" href="javascript:void(0)" onClick={() => redirectRouting('contact')}>Contact US</a>
+                    </li>
+                </ul>  
+                <div className='text-right'>
+                    <CurrentBalance/>
+                    <Operation/>
+                </div>          
             </div>
         </div>
         </nav>

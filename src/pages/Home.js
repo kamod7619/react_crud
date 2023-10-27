@@ -8,12 +8,15 @@ import { Hello } from '../helpers/Common'
 
 
 
+
+
 let Home = ()=>{    
 
     console.log("Helper",Hello())
 
     return (
         <div>
+            
             <Slider/>
             
             {/* services section */}
