@@ -33,6 +33,7 @@ function App() {
 
         
               <Route path='/' element={<Home/>} />
+              <Route path='/react_crud' element={<Home/>} />
               <Route path='/read' element={<ReadBlog/>} />
               <Route path='/about' element={<About/>} />
               <Route path='/contact' element={<Contact/>} />
