@@ -1,7 +1,8 @@
-import React from 'react'
+import React,{ useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import Operation from '../pages/Operation';
 import CurrentBalance from './CurrentBalance';
+import DarkModeToggle from './DarkModeToggle';
 
 export default function Header() {
 
@@ -16,8 +17,10 @@ export default function Header() {
         }
     }
 
+   
+
     return (
-        <nav className="navbar navbar-expand-sm navbar-dark fixed-top">
+        <nav className={`navbar navbar-expand-sm navbar-dark fixed-top `} >
         <div className="container-fluid">
             <a className="navbar-brand" href="javascript:void(0)" onClick={() => redirectRouting()}>Shopper Store</a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
@@ -26,7 +29,7 @@ export default function Header() {
             <div className="collapse navbar-collapse" id="mynavbar">
                 <ul className="navbar-nav me-auto">
                     <li className="nav-item">
-                    <a className="nav-link" href="javascript:void(0)" onClick={() => redirectRouting()}>Home</a>
+                    <a className="nav-link" href="javascript:void(0)" onClick={() => redirectRouting()}>New Home</a>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link" href="javascript:void(0)" onClick={() => redirectRouting('read')}>Crud Operation</a>
@@ -47,6 +50,7 @@ export default function Header() {
                 <div className='text-right'>
                     <CurrentBalance/>
                     <Operation/>
+                    <DarkModeToggle />
                 </div>          
             </div>
         </div>

@@ -15,3 +15,12 @@ export const WithdrawMoney = (amount) =>{
         })
     }
 }
+
+export const changeMode = (type,mode) =>{
+    return (dispatch)=>{
+        dispatch({
+            type: type,
+            payload: mode
+        })
+    }
+}
